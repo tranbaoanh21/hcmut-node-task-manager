@@ -37,3 +37,21 @@ A production-ready RESTful API for task management, built with a focus on modula
 ├── .env            # Private configuration (Ignored by Git)
 ├── app.js          # Application entry point
 └── package.json    # Dependency management
+
+⚙️ Setup & Installation
+1. Clone the repository
+
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+cd your-repo-name
+
+2. Install dependencies
+npm install
+
+3. Environment Variables
+Create a .env file in the root directory and add the following:
+
+PORT=5000
+MONGO_URI=your_mongodb_atlas_connection_string
+
+4. Run the app
+npm start
