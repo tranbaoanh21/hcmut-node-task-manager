@@ -1,19 +1,39 @@
-## Project Setup
+# 🚀 Task Manager API - Backend Service
 
-In order to run the project, setup .env and set MONGO_URI variable equal to DB connection string.
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-In order to avoid port collisions, in the source code port value is 5000
+A production-ready RESTful API for task management, built with a focus on modularity, scalability, and security. This application leverages the **MERN** stack (backend focus) to handle complex CRUD operations and cloud data persistence.
 
-### MongoDB Atlas template
+---
 
-Create file `.env` in `03-task-manager/final` and use this template:
+## 🌟 Key Features
+- **RESTful API Design**: Clean and predictable URL structures.
+- **CRUD Operations**: Complete functionality to Create, Read, Update, and Delete tasks.
+- **Cloud Database Integration**: Seamless connection to **MongoDB Atlas**.
+- **Schema Validation**: Data integrity ensured via **Mongoose** models.
+- **Error Handling**: Comprehensive middleware for catching and responding to API errors.
+- **Security**: Environment variable protection via `dotenv`.
 
-```env
-PORT=5000
-MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/task-manager?retryWrites=true&w=majority
-```
+## 🛠 Tech Stack
+- **Runtime Environment**: Node.js
+- **Framework**: Express.js
+- **Database**: MongoDB (Atlas)
+- **ODM**: Mongoose
+- **API Testing**: Postman
+- **Version Control**: Git / GitHub
 
-Notes:
-- Replace `<username>`, `<password>`, and `<cluster-name>` with your Atlas values.
-- If password has special characters, URL-encode it first.
-- In Atlas, remember to allow your IP in Network Access and create a DB user.
+## 📂 Project Architecture
+```text
+.
+├── controllers/    # Request handlers & Business logic
+├── db/             # Database connection setup
+├── middleware/     # Global error handlers & request logging
+├── models/         # Data schemas & validation rules
+├── public/         # Static assets for the frontend
+├── routes/         # API endpoint definitions
+├── .env            # Private configuration (Ignored by Git)
+├── app.js          # Application entry point
+└── package.json    # Dependency management
