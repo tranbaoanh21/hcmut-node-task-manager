@@ -39,8 +39,7 @@ A production-ready RESTful API for task management, built with a focus on modula
 └── package.json    # Dependency management
 
 
-
-## ⚙️ Setup & Installation
+```
 
 Follow these steps to get the project running on your local machine:
 
