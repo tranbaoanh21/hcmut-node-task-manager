@@ -47,17 +47,21 @@ Follow these steps to get the project running on your local machine:
 ```bash
 git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 cd your-repo-name
-
+```
 ### 2. Install dependencies
 ```bash
 npm install
 
+
+```
 ### 3. Set up .env
 Create a .env file in the root directory and add the following configuration:
 ```bash
 PORT=3000
 MONGO_URI=your_mongodb_atlas_connection_string
 
+
+```
 ### 4. Run the app
 Create a .env file in the root directory and add the following configuration:
 ```bash
