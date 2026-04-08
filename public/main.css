@@ -340,6 +340,16 @@ form > :last-child {
   display: grid;
   gap: 1rem;
 }
+.drag-hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: var(--grey-900);
+}
+.reorder-alert {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  visibility: hidden;
+}
 .single-task {
   padding: 1rem 2.5rem;
   background: var(--white);
@@ -349,9 +359,14 @@ form > :last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: grab;
 }
 .single-task:hover {
   box-shadow: var(--shadow-4);
+}
+.single-task.dragging {
+  opacity: 0.55;
+  cursor: grabbing;
 }
 .single-task h5 {
   margin-bottom: 0;
@@ -382,6 +397,10 @@ form > :last-child {
   display: flex;
   align-items: center;
   gap: 0 0.5rem;
+}
+.task-priority {
+  font-size: 0.7rem;
+  color: var(--grey-800);
 }
 .delete-btn,
 .edit-link {

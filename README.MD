@@ -12,6 +12,7 @@ A production-ready RESTful API for task management, built with a focus on modula
 ## 🌟 Key Features
 - **RESTful API Design**: Clean and predictable URL structures.
 - **CRUD Operations**: Complete functionality to Create, Read, Update, and Delete tasks.
+- **Priority Reordering**: Drag and drop tasks to instantly rearrange their priority order.
 - **Cloud Database Integration**: Seamless connection to **MongoDB Atlas**.
 - **Schema Validation**: Data integrity ensured via **Mongoose** models.
 - **Error Handling**: Comprehensive middleware for catching and responding to API errors.

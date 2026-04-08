@@ -11,6 +11,12 @@ const TaskSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  priority: {
+    type: Number,
+    required: true,
+    min: 1,
+    default: 1,
+  },
 })
 
 module.exports = mongoose.model('Task', TaskSchema)
