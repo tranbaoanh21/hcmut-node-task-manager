@@ -64,7 +64,7 @@ MONGO_URI=your_mongodb_atlas_connection_string
 
 ```
 ### 4. Run the app
-Create a .env file in the root directory and add the following configuration:
+Start your server
 ```bash
 npm start
 
